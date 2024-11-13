@@ -1,0 +1,180 @@
+/* Base styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f6fa; /* Softer light background */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Subtle gradient */
+    background: #fff url('bg.jpg') no-repeat center center;
+    background-size: cover;
+
+}
+
+/* Container styling */
+.container {
+    max-width: 1000px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff; /* White background for contrast */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Slightly darker shadow */
+    border-radius: 10px; /* Rounded corners */
+    
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #222; /* Darker background for navbar */
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #ffc107; /* Yellow color for brand */
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px; /* Rounded link buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    background-color: #ffc107;
+    color: #222; /* Dark text for contrast */
+}
+
+/* Section styling */
+section {
+    padding: 40px 20px;
+    margin-top: 30px;
+    background-color: #f8f9fb;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease;
+
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Section headers */
+section h2 {
+    font-size: 2rem;
+    color: #444;
+    border-bottom: 3px solid #ffc107;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+/* Links within sections */
+section a {
+    color: #333;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/* List styling */
+ul.list-unstyled li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+ul.list-unstyled li:last-child {
+    border: none;
+}
+
+/* Cards styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Button styling */
+.btn {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e0a800;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact section styling */
+#contact p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+#contact p a {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #ddd;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+    section {
+        padding: 20px 10px;
+    }
+    section h2 {
+        font-size: 1.75rem;
+    }
+    .card {
+        padding: 15px;
+    }
+    .card-title {
+        font-size: 1.1rem;
+    }
+}
